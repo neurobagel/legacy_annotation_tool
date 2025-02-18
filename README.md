@@ -90,4 +90,3 @@ The Annotation tool uses [Cypress](https://www.cypress.io/) for integration, com
 ## License
 
 The Neurobagel Annotation tool uses the [MIT License](https://github.com/neurobagel/annotation_tool/blob/main/LICENSE).
-old-annotation-tool
