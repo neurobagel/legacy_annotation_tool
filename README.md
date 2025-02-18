@@ -1,4 +1,4 @@
-# Annotation Tool
+# Legacy Annotation Tool
 
 <div align="center">
     <a href="https://github.com/neurobagel/annotation_tool/actions/workflows/pages/pages-build-deployment">
