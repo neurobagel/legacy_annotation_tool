@@ -147,8 +147,8 @@ function getDefaultState() {
 
         range: {
 
-            Label: "Age defined as a range of two integers",
-            TermURL: "nb:FromRanged"
+            Label: "a range between a minimum and maximum value",
+            TermURL: "nb:FromRange"
         }
     },
 
@@ -384,7 +384,7 @@ export const getters = {
 
             case "range":
 
-                convertedValue = p_originalValue.split("-").reduce((acc, value) => parseInt(acc) + parseInt(value)) / 2;
+                convertedValue = p_originalValue.split("-").reduce((acc, value) => parseFloat(acc) + parseFloat(value)) / 2;
                 break;
 
             // case "isoyear": {
