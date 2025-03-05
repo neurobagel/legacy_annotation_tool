@@ -143,6 +143,12 @@ function getDefaultState() {
 
             Label: "period of time defined according to the ISO8601 standard",
             TermURL: "nb:FromISO8601"
+        },
+
+        range: {
+
+            Label: "Age defined as a range of two integers",
+            TermURL: "nb:FromRanged"
         }
     },
 
@@ -374,6 +380,11 @@ export const getters = {
             case "int":
 
                 convertedValue = parseInt(p_originalValue);
+                break;
+
+            case "range":
+
+                convertedValue = p_originalValue.split("-").reduce((acc, value) => parseInt(acc) + parseInt(value)) / 2;
                 break;
 
             // case "isoyear": {
