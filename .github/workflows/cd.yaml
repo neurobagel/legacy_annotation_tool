@@ -15,13 +15,13 @@ jobs:
     - name: Set up node env
       uses: actions/setup-node@v4.2.0
       with:
-        node-version: 18
+        node-version: 20
 
     - name: Install dependencies
-      run: yarn
+      run: npm ci
 
     - name: Generate
-      run: yarn generate
+      run: npm run generate
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v4
