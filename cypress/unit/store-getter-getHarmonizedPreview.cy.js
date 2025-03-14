@@ -124,6 +124,19 @@ describe("getHarmonizedPreview", () => {
         expect(harmonizedValue).to.equal(42);
     });
 
+    it("range transformation", () => {
+
+        // Setup
+        store.state.dataDictionary.annotated.column1.transformationHeuristic = "range";
+        originalValue = "40.5-50.5";
+
+        // Act
+        const harmonizedValue = getters.getHarmonizedPreview(store.state)("column1", originalValue);
+
+        // Assert
+        expect(harmonizedValue).to.equal(45.5);
+    });
+
     // it("isoyear transformation", () => {
 
     //     // Setup
