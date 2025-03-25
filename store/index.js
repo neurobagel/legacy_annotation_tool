@@ -4,6 +4,10 @@ import Vue from "vue";
 import diagnosisTerms from "~/static/diagnosisTerms.json";
 import assessmentTerms from "~/static/assessmentTerms.json";
 
+// Manually add the healthy control term
+diagnosisTerms.push({"label":"Healthy Control",
+      "identifier":"ncit:C94342"});
+
 // The default state of the store
 function getDefaultState() {
     return {

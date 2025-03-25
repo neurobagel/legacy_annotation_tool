@@ -121,7 +121,7 @@ describe("End to end test using a simple UI path through the app", () => {
                         .click();
 
                     cy.get("[data-cy='categoricalSelector_0']").type("Acute{enter}");
-                    cy.get("[data-cy='isControlButton_1']").type("Acute{enter}");
+                    cy.get("[data-cy='isControlButton_1']").click();
                     cy.get("[data-cy='categoricalSelector_2']").type("Hearing{enter}");
 
                     // D. Assert that next page nav and button are enabled for download page
