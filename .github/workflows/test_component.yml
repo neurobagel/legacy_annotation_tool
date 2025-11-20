@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       # Install NPM dependencies, cache them correctly
       - name: Run Component tests 🧪
         uses: cypress-io/github-action@v6
